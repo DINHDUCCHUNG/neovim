@@ -1,6 +1,6 @@
 # neovim
 
-#### copy this config file into ~/.config/nvim
+#### copy this config file into `~/.config/nvim`
 
 #### After that, enter the commands: 
 - `:PlugInstall`
