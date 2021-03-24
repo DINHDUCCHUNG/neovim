@@ -1,9 +1,9 @@
 # neovim
 
-copy this config file into ~/.config/nvim
+# copy this config file into ~/.config/nvim
 
-After that, enter the commands: 
-:PlugInstaal
-:CocInstall
+# After that, enter the commands: 
+- `:PlugInstall`
+- `:CocInstall`
 
-Alright, you have new neovim editor!
+# Alright, you have new neovim editor!
