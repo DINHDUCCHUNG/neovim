@@ -20,5 +20,6 @@
     "html",
     "tsx",
     "typescriptreact"
-  ]
+  ],
+  "prettier.singleQuote": true
 }

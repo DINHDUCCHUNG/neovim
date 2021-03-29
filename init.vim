@@ -13,6 +13,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'APZelos/blamer.nvim'
 Plug 'alvan/vim-closetag'
+Plug 'AndrewRadev/tagalong.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -322,3 +323,4 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 "
 let g:closetag_close_shortcut = '<leader>>'
+let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact']
