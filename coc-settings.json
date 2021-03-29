@@ -8,5 +8,17 @@
     "v": "open:vsplit"
   },
   "prettier.printWidth": 150,
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "jsx", "json", "typescript", "javascript", "react", "vetur", "html", "tsx"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "jsx",
+    "json",
+    "typescript",
+    "javascript",
+    "react",
+    "vetur",
+    "html",
+    "tsx",
+    "typescriptreact"
+  ]
 }
