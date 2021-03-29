@@ -11,6 +11,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tomtom/tcomment_vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'APZelos/blamer.nvim'
 " Initialize plugin system
 call plug#end()
 
@@ -274,3 +275,5 @@ nnoremap <silent> <Leader>f :Rg<CR>
 
 let g:airline#extensions#hunks#enabled=1
 set clipboard=unnamedplus " use clipboard for copy and paste
+let g:blamer_enabled = 1
+let g:blamer_date_format = '%d/%m/%y'

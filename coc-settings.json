@@ -1,10 +1,12 @@
 {
-   // explorer
+  // explorer
   "explorer.width": 45,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-  }
+  },
+  "prettier.printWidth": 150,
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "jsx", "json", "typescript", "javascript", "react", "vetur", "html", "tsx"]
 }
