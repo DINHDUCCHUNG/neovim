@@ -8,6 +8,7 @@
     "v": "open:vsplit"
   },
   "prettier.printWidth": 150,
+  "prettier.singleQuote": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -20,6 +21,5 @@
     "html",
     "tsx",
     "typescriptreact"
-  ],
-  "prettier.singleQuote": true
+  ]
 }

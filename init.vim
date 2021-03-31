@@ -14,6 +14,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'APZelos/blamer.nvim'
 Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Initialize plugin system
 call plug#end()
 
