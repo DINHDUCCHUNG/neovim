@@ -15,6 +15,7 @@ Plug 'APZelos/blamer.nvim'
 Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'jelera/vim-javascript-syntax'
 " Initialize plugin system
 call plug#end()
 
@@ -73,8 +74,9 @@ if exists('syntax_on')
 endif
 
 let g:colors_name = 'material'
-let g:material_terminal_italics = get(g:, 'material_terminal_italics', 0)
-let g:material_theme_style = 'palenight'
+let g:material_terminal_italics = get(g:, 'material_terminal_italics', 1)
+let g:airline_theme = 'material'
+let g:material_theme_style = 'darker'
 
 colorscheme material
 
@@ -325,3 +327,4 @@ let g:closetag_shortcut = '>'
 "
 let g:closetag_close_shortcut = '<leader>>'
 let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact']
+nnoremap <silent> <Leader>f :Rg<CR>
