@@ -275,7 +275,7 @@ inoremap <expr> <c-x><c-f> fzf#vim#complete#path('rg --files')
 
 " Word completion with custom spec with popup layout option
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'window': { 'width': 0.2, 'height': 0.9, 'xoffset': 1 }})
-nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <C-f> :GFiles<CR>
 nnoremap <silent> <Leader>f :Rg<CR>
 
 let g:airline#extensions#hunks#enabled=1

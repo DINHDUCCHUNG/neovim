@@ -7,7 +7,7 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "prettier.printWidth": 150,
+  "prettier.printWidth": 180,
   "prettier.singleQuote": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
