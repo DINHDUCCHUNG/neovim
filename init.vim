@@ -16,6 +16,7 @@ Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'jelera/vim-javascript-syntax'
+Plug 'leafOfTree/vim-vue-plugin'
 " Initialize plugin system
 call plug#end()
 
@@ -328,3 +329,36 @@ let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact']
 nnoremap <silent> <Leader>f :Rg<CR>
+let g:vim_vue_plugin_config = { 
+      \'syntax': {
+      \   'template': ['html'],
+      \   'script': ['javascript', 'typescript'],
+      \   'style': ['scss', 'sass'],
+      \   'docs': 'markdown',
+      \},
+      \'full_syntax': [],
+      \'initial_indent': [],
+      \'attribute': 0,
+      \'keyword': 0,
+      \'foldexpr': 0,
+      \'debug': 0,
+      \}
+autocmd FileType vue inoremap <buffer><expr> : InsertColon()
+
+function! InsertColon()
+  let tag = GetVueTag()
+  return tag == 'template' ? ':' : ': '
+endfunction
+
+function! OnChangeVueSyntax(syntax)
+  echom 'Syntax is '.a:syntax
+  if a:syntax == 'html'
+    setlocal commentstring=<!--%s-->
+    setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
+  elseif a:syntax =~ 'css'
+    setlocal comments=s1:/*,mb:*,ex:*/ commentstring&
+  else
+    setlocal commentstring=//%s
+    setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+  endif
+endfunction
